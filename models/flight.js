@@ -8,8 +8,5 @@ const flightSchema = new Schema({
     Departs: Date,
 })
 
-let flightModel = mongoose.model('flight', flightSchema)
+module.exports = mongoose.model('Flight', flightSchema);
 
-module.exports = {
-    flightModel,
-}
